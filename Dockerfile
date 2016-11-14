@@ -28,9 +28,9 @@ RUN apt-get update \
 ADD openvpn/ /etc/openvpn/
 ADD transmission/ /etc/transmission/
 
-ENV OPENVPN_USERNAME=**None** \
-    OPENVPN_PASSWORD=**None** \
-    OPENVPN_PROVIDER=**None** \
+ENV OPENVPN_USERNAME="" \
+    OPENVPN_PASSWORD="" \
+    OPENVPN_PROVIDER=""\
     "TRANSMISSION_ALT_SPEED_DOWN=50" \
     "TRANSMISSION_ALT_SPEED_ENABLED=false" \
     "TRANSMISSION_ALT_SPEED_TIME_BEGIN=540" \
