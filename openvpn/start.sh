@@ -1,4 +1,9 @@
 #!/bin/sh
+
+chmod +x /etc/openvpn/tun_setup.sh
+
+/etc/openvpn/tun_setup.sh
+
 vpn_provider="$(echo $OPENVPN_PROVIDER | tr '[A-Z]' '[a-z]')"
 vpn_provider_configs="/etc/openvpn/$vpn_provider"
 if [ ! -d "$vpn_provider_configs" ]; then
